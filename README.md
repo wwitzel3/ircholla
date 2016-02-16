@@ -8,6 +8,10 @@ Currently you can only connect to a single server, join a single channel,
 and send a single message. Each new message requires a completely new
 connection.
 
+## Why
+
+Needed an IRC notify library that didn't require any extra depencies.
+
 ## Features
 
  - Will attempt to find a random name if there is a NICK conflict.
