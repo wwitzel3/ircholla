@@ -10,7 +10,7 @@ connection.
 
 ## Why
 
-Needed an IRC notify library that didn't require any extra depencies.
+Needed an IRC notify library that didn't require any extra dependencies.
 
 ## Features
 
