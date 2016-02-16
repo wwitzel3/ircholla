@@ -17,10 +17,11 @@ connection.
 
 ## Usage
 ```python
-    holla = IRCHolla('chat.freenode.net:6667', '#botwar', 'mybot123')
+    from ircholla import Holla
+    myholla = Holla('chat.freenode.net:6667', '#botwar', 'mybot123')
 
     # note, this will connect a bot for notice and msg
-    holla.notice('I need you')
-    holla.msg('I need you')
+    myholla.notice('I need you')
+    myholla.msg('I need you')
 ```
 
