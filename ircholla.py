@@ -24,15 +24,10 @@ class Holla(object):
         self.working = True
         self.debug = self.kwargs.get('debug', False)
 
-    def notice(self, message):
-        '''Sends a notice to the channel provided during instansiation'''
-        self.notice = True
-        self.message = message
-        self._events()
-
-    def msg(self, message):
-        '''Sends a regular message to the channel provided during instansiation'''
-        self.notice = False
+    def msg(self, message, notice=False):
+        '''Sends a message to the channel provided during instansiation
+        If notice == True, then the message will be sent as a channel NOTICE'''
+        self.notice = notice
         self.message = message
         self._events()
 

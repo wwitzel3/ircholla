@@ -24,6 +24,15 @@ def test_handle_nick_inuse(holla):
     assert holla._deque.popleft().startswith('USER nickname_')
 
 
+def test_handle_join_msg(holla):
+    holla.notice = False
+    holla.message = 'test'
+    holla._deque.clear()
+    holla._handle(':server JOIN #test')
+    assert holla._deque.popleft().startswith('PRIVMSG')
+    assert holla._deque.popleft().startswith('QUIT')
+
+
 def test_handle_join_notice(holla):
     holla.notice = True
     holla.message = 'test'

@@ -25,7 +25,7 @@ Needed an IRC notify library that didn't require any extra dependencies.
     myholla = Holla('chat.freenode.net:6667', '#botwar', 'mybot123')
 
     # note, this will connect a bot for notice and msg
-    myholla.notice('I need you')
     myholla.msg('I need you')
+    myholla.msg('I need you', notice=True)
 ```
 
