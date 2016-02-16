@@ -1,4 +1,4 @@
-# ircholla
+# ircholla [![Build Status](https://travis-ci.org/wwitzel3/ircholla.svg?branch=master)](https://travis-ci.org/wwitzel3/ircholla)
 
 A very simple library that connects to an IRC server and sends a
 notice or message to a channel. It supports very few features and
