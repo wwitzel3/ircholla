@@ -4,8 +4,9 @@ A very simple library that connects to an IRC server and sends a
 notice or message to a channel. It supports very few features and
 does not handle failure cases well.
 
-Currently you can cannot to a single server, join a single channel,
-and send a single message.
+Currently you can only connect to a single server, join a single channel,
+and send a single message. Each new message requires a completely new
+connection.
 
 ## Features
 
